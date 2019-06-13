@@ -1,17 +1,22 @@
-$(document).ready(function(){    
-     $('input:file').on('change',function(){
+$(document).ready(function(){
+    $('.jumbotron').css({'height':'700px'})
+    $("input:file").on('change', function () {
         var read = new FileReader();
-            read.onload = getImg;
-            read.readAsDataURL=$(this).forms[0];
-    }); 
-   function getImg(e){
-    $('.base').css({'margin-left':'400px','height ':'600px','width':'600px','background-image':'url('+e.target.result+')','background-repeat':'no-repeat','background-size':'cover'});
-   } 
-   setGrid(3);          
-});
-           
+        read.onload = function (e) {
+            $(".base").css({
+                "background-image": "url("+e.target.result+")",
+                "background-size" : "cover"
+            });
+        }
+        read.readAsDataURL($(this)[0].files[0]);
+        setGrid(3);
+    });
+       // $('button').click(function(){  
+       // })
+});           
 var setGrid = function(gridSize=4) {
-        for(let i=0;i<gridSize;i++){
+    $('.base').css({'position':'absolute','height':'500px','width':'500px'}) 
+    for(let i=0;i<gridSize;i++){
              $('.base').append("<tr></tr>")  
             }
             $('tr').each(function(){
@@ -20,7 +25,29 @@ var setGrid = function(gridSize=4) {
                 }
             }); 
 
-        }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
