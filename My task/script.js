@@ -9,10 +9,11 @@ $(document).ready(function(){
             });
         }
         read.readAsDataURL($(this)[0].files[0]);
-        setGrid(3);
+        
     });
-       // $('button').click(function(){  
-       // })
+        $('button').click(function(){  
+       setGrid(3);
+        })
 });           
 var setGrid = function(gridSize=4) {
     $('.base').css({'position':'absolute','height':'500px','width':'500px'}) 
