@@ -3,10 +3,10 @@ td{
     height :100px;
     width :100px;
 }
-table{
+/* table{
     margin-left :380px;
     align-self: center;
-}
+} */
 .page-header{
     padding :5px;
     color :rgb(232, 240, 232);
@@ -17,14 +17,40 @@ table{
     width :100px;
     border: 1px solid;
 }
-.Imgholder{
-    position:"relative";
-    height : "500px";
-    width : "500px";
-}
+
 .page-header h2{
     text-align:"center";
 }
 footer{
     text-align: "center";
+}
+
+.selection{
+    margin : 5px;
+    padding : 5px;
+}   
+.imgContainer{
+    position :relative;
+    margin-left : 400px;
+    padding :0;
+    height :500px;
+    width : 502px;
+    border : 1px solid;
+}
+.imgContainer .base{
+    position : absolute;
+}
+.pieces{
+    cursor :pointer;
+    float :left;
+    border : 1px solid;
+    margin: 0;
+    padding: 0;
+}
+.imgContainer img{
+    opacity : 0.4;
+    position:absolute;
+    height :500px;
+    width : 500px;
+    display : none;
 }
