@@ -15,7 +15,7 @@ let Module = function(){
 
 var module= new Module();
 
-$('.imgContainer').css({'background-image' :'url('+ file.read +')'});
+$('.imgContainer').css({'background-image' :'url('+ module.file.read +')'});
 
 $("button").click(function() {
   let gridSize = $(".selection option:selected").val();
