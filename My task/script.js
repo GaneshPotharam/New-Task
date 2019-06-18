@@ -15,9 +15,10 @@ let Module = function(){
 
 var module= new Module();
 $(document).ready(function(){
-
+  $('jumbotron').css({
+    'width' :'100%'
+  })
 });
-
 $('.imgContainer').css({'background-image' :'url('+ module.file.read +')'});
 
 $("button").click(function() {
