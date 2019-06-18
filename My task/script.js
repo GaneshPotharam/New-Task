@@ -1,4 +1,4 @@
-var ImageSize = [height , width];
+
 let Module = function(){
      var file =$("input:file").on("change", function() {
                   var read = new FileReader();
