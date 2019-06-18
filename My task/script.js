@@ -14,6 +14,9 @@ let Module = function(){
 }
 
 var module= new Module();
+$(document).ready(function(){
+
+});
 
 $('.imgContainer').css({'background-image' :'url('+ module.file.read +')'});
 
