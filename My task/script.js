@@ -14,6 +14,10 @@ let Module = function(){
 }
 
 var module= new Module();
+$('.base').css({
+  'background-image': 'url('+module.file.read+')',
+}
+)
 $(document).ready(function(){
   $('jumbotron').css({
     'width' :'100%'
