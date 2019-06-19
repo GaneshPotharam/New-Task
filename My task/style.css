@@ -52,5 +52,5 @@ footer{
     position:absolute;
     height :500px;
     width : 500px;
-    display : none;
+    /* display : block; */
 }
