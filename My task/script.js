@@ -1,9 +1,9 @@
 
 (function(){ 
-  var imageSize = [500 ,500]; 
+  let imageSize = [500 ,500]; 
   function readImg(input){
       if(input.files[0]){
-      var read = new FileReader();
+      let read = new FileReader();
           read.onload = function(e){
                 $('.base .pieces').css({'background-image':'url('+e.target.result+')'});
                 }
@@ -12,7 +12,7 @@
     }
     $("input:file").on("change", function() {
           readImg(this);           
-          var gridSize = $(".selection option:selected").val();
+          let gridSize = $(".selection option:selected").val();
           console.log("gridSize", gridSize);
           setGrid(gridSize,imageSize);
     }); 
@@ -56,7 +56,7 @@ $.fn.randomize = function (selector) {
   return this;
 };
   
-  
+    
  
 
   
